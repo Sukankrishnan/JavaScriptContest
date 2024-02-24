@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Number Guesser</title>
 </head>
 <body>
     <h1 style="background-color: chocolate;"><center>The Number Guesser</center></h1>
@@ -46,15 +46,19 @@
                 document.createElement("p");
                 write.innerHTML="Too High, guess again";
                 console.log("Too High, guess again.");
+                count();
             }
             else if (difference>=1)
             {
                 document.createElement("p");
                 write.innerHTML="Too low, guess again";
                 console.log("Too low, guess again.");
+                count();
             }
 
-            counter++;            
+            counter++;  
+            function count()
+            {          
             if(counter==10)
             {
                 console.log("Max attempt reached");
@@ -66,6 +70,7 @@
                 console.log("Counter ",counter);
                 document.createElement("p");
                 write.innerHTML+=` You have ${10-counter} attempts left`;
+            }
             }
                         
         }
