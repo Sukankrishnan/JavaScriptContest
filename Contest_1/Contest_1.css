@@ -1,0 +1,23 @@
+*{
+    background-color: aqua;
+}
+
+.quiz{
+    color: brown;
+    margin-top: 8%;
+    margin-left: 35%;
+    font-size:xx-large;
+    font-style:oblique;
+}
+
+.enterButton{
+    background-color: rgb(230, 230, 230);
+    border: none;
+    color: brown;
+    margin-left: 35%;
+    font-size:large;
+    font-style:oblique;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 15px 30px;
+}
