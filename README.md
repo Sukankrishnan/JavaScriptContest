@@ -1,6 +1,11 @@
 # JavaScriptContest
 
-The main repo contains the contest problem statements.
+Main Branch
+--
+The main branch contains all the contest problem statements.
 
-All the attempted solutions and working videos are maintained in the Master branch.
+Master Branch
+--
+
+All the attempted solutions and working videos are maintained in this branch.
 
