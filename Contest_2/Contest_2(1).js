@@ -32,12 +32,22 @@ var selectYear=document.getElementById("selectYear");
             {
                 timeTravelFeb();
             }
-            else if(tMonth.value==4 || tMonth.value==6 || tMonth.value==9 || tMonth.value==11 && tDate.value==31) //validate month and date
+            else if(tDate.value==31) //validate month and date
             {
-                console.log("Invalid date. Please try again")
-                document.createElement("p");
-                printMessage.innerHTML="Date is invalid and the month you have selected does not contain the date 31. Please try again";
+                console.log("Date is", tDate.value);
+                var m=[4,6,9,11];
+                for(var i=0;i<=m.length;i++)
+                {
+                    console.log(`m[i] is ${m[i]}`);
+                    if(tMonth.value==m[i])
+                    {
+                    console.log("Invalid date. Please try again")
+                    document.createElement("p");
+                    printMessage.innerHTML="Date is invalid and the month you have selected does not contain the date 31. Please try again";
+                    }
+                    console.log("Print");
 
+                }
             }
             else
             {
